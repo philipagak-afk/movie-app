@@ -1,4 +1,8 @@
+import { useLocation } from "react-router";
+
 function Navbar() {
+  const location = useLocation()
+  const pathname = location.pathname
   return (
     <nav className="w-full bg-[#050316] text-white flex items-center justify-between px-5 py-3">
 
