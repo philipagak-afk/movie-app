@@ -1,5 +1,3 @@
-
-
-function fetchmovies(){
-    return movies;
-}
+ async function fetchmovies(){
+    
+ }
