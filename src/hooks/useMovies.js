@@ -1,0 +1,5 @@
+
+
+function fetchmovies(){
+    return movies;
+}
