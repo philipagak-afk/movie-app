@@ -20,11 +20,11 @@ const{movies}= useMovies()
 
         {/* Movies Grid */}
         <div className="grid grid-cols-2 mt-5 sm:grid-cols-3 md:grid-cols-4 2xl:grid-cols-5 gap-6">
-          {movies?.map((movie, index) => (
-            <div key={index} className="overflow-hidden rounded-xl">
+          {movies?.map((movie) => (
+            <div key={movie.id} className="overflow-hidden rounded-xl">
               <img
-                src={movie}
-                alt={`Movie poster ${index + 1}`}
+                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                alt={movie.title}
                 className="w-full aspect-2/3 object-cover rounded-xl hover:scale-105 transition-transform duration-300"
               />
             </div>
