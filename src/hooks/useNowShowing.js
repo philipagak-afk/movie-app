@@ -1,7 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
 
 export function useNowShowing(){
-    const{data,isLoading,isError} = useQuery
+    const{data,isLoading,isError} = useQuery({
+        queryKey:["now-showing"],
+        queryFn:fetchmovies
+    })
+    return {movies:data,isLoading,isError}
 }
 async function fetchmovies(){
     const url = 'https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1';

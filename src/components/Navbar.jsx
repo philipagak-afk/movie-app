@@ -19,7 +19,7 @@ function Navbar() {
   <ul className="flex gap-4 items-center">
 
   <li className="text-purple-500 underline decoration-purple-500 "><Link to={"/"}>Home</Link></li>
-  <li><Link to="/nowshowing">Now Showing</Link> </li>
+  <li><Link to="/now-showing">Now Showing</Link> </li>
   <li><Link to="series">Series</Link></li>
   <li><Link to="popular">popular</Link></li>
   
