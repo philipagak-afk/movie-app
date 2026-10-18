@@ -19,7 +19,7 @@ function NowShowing() {
         {/* Movies Grid */}
         <div className="grid grid-cols-2 mt-5 sm:grid-cols-3 md:grid-cols-4 2xl:grid-cols-5 gap-6">
           {movies?.map((movie) => (
-            <MovieCard key={movie.id} movie={movie} />
+            <MovieCard key={} movie={movie} />
           ))}
         </div>
       </div>
