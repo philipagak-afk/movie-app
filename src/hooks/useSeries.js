@@ -5,7 +5,7 @@ import { useQuery } from "@tanstack/react-query";
         queryKey:["series"],
         queryFn:fetchseries
     })
-return {movies:data,isLoading,isError}
+return {series:data,isLoading,isError}
     
 
  }
