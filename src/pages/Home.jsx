@@ -17,7 +17,7 @@ const{movies}= useMovies()
           &nbsp; You'll Enjoy Without the Hassle
         </h1>
 
-        <h2 class="text-2xl font-bold text-white sm:text-3xl">All Movies</h2>
+        <h2 className="text-2xl font-bold text-white sm:text-3xl">All Movies</h2>
 
         {/* Movies Grid */}
         <div className="grid grid-cols-2 mt-5 sm:grid-cols-3 md:grid-cols-4 2xl:grid-cols-5 gap-6">
