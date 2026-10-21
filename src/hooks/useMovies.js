@@ -1,16 +1,16 @@
 import { useQuery } from "@tanstack/react-query";
 
- export function useMovies(){
+ export function useMovieDetails(){
     const{data,isLoading,isError}=useQuery({
         queryKey:["movies"],
-        queryFn:fetchmovies
+        queryFn:fetchdetails
     })
 return {movies:data,isLoading,isError}
     
 
  }
- async function fetchmovies(){
-const url = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc';
+ async function fetchdetails(){
+const url = `https://api.themoviedb.org/3/movie/movie_id?language=en-US`;
 const options = {
   method: 'GET',
   headers: {
