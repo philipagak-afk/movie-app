@@ -17,7 +17,7 @@ function App() {
         <Route path="now-showing" element={<NowShowing/>}/>
         <Route path="popular" element={<Popular/>}/>
         <Route path="series"  element={<Series/>}/>
-        <Route path="movie-details" elementt={<MovieDetails/>}/>
+        <Route path="details/movie/:movie_id" element={<MovieDetails/>}/>
         </Route>
       </Routes>
       </BrowserRouter>
