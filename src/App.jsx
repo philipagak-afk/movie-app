@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import NowShowing from "./pages/NowShowing";
 import Popular from "./pages/Popular";
 import Series from "./pages/Series";
+import MovieDetails from "./pages/MovieDetails";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="now-showing" element={<NowShowing/>}/>
         <Route path="popular" element={<Popular/>}/>
         <Route path="series"  element={<Series/>}/>
+        <Route path="movie-details" elementt={<MovieDetails/>}/>
         </Route>
       </Routes>
       </BrowserRouter>
