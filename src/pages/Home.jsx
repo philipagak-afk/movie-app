@@ -1,33 +1,23 @@
 import MovieCard from "../components/MovieCard";
-import { useMovies } from "../hooks/useMovies";
-import NowShowing from "./NowShowing"
-
+import { useMovie } from "../hooks/UseMovie"
 
 function Home() {
-  
-const{movies}= useMovies()
+    const {movies} = useMovie();
+    console.log(movies)
   return (
-    <div className="w-full h-full bg-[#030014] ">
-      <div className="w-full min-h-[90vh] max-w-360 mx-auto">
-        <h1 className="text-white text-center font-semibold text-2xl pt-4">
-          Find &nbsp;
-          <span className="bg-linear-to-r from-[#d6c7ff] to-[#ab8bff] bg-clip-text text-transparent">
-            Movies
-          </span>
-          &nbsp; You'll Enjoy Without the Hassle
-        </h1>
+    <div className="w-full min-h-screen bg-[#030014] text-white">
+      <div className="text-center leading-tight text-2xl ">
+  <h1>Find <span className="text-2xl font-semibold text-purple-500 ">Movies</span> You'll Enjoy Without the Hassle</h1>
+</div>
+<h2>All Movies</h2>
+    <ul className="flex w-full  flex-wrap items-center justify-between">
+      {movies?.map((movie)=>(
+        <MovieCard key={movie.id} movie={movie} />
+      ))}
 
-        <h2 className="text-2xl font-bold text-white sm:text-3xl">All Movies</h2>
-
-        {/* Movies Grid */}
-        <div className="grid grid-cols-2 mt-5 sm:grid-cols-3 md:grid-cols-4 2xl:grid-cols-5 gap-6">
-          {movies?.map((movie) => (
-         <MovieCard key={movie.id} movie={movie}/>
-          ))}
-        </div>
+    </ul>
       </div>
-    </div>
-  );
+  )
 }
 
 export default Home
