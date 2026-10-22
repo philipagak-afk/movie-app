@@ -1,5 +1,5 @@
 import MovieCard from "../components/MovieCard";
-import { useMovie } from "../hooks/UseMovie"
+import { useMovie } from "../hooks/useMovie"
 
 function Home() {
     const {movies} = useMovie();
