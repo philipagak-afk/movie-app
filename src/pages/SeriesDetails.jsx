@@ -1,18 +1,18 @@
 import { useSeriesDetails } from "../hooks/UseMovieDetails";
 
 function SeriesDetails() {
-    const {movie} = useSeriesDetails();
+    const {series} = useSeriesDetails();
   return (
     <main className="w-full min-h-[90vh]">
       <div className="w-full min-h-[90vh] relative">
         <img
           className="absolute z-10 h-[90vh] w-full object-cover  md:object-center object-top"
           alt=" backdrop for Spider-Man: Brand New Day"
-          src={`https://image.tmdb.org/t/p/original${movie?.backdrop_path}`}
+          src={`https://image.tmdb.org/t/p/original${series?.backdrop_path}`}
         ></img>
         <div className="w-full min-h-[90vh] absolute bg-[#030014]/60  z-10 p-3">
           <p className="md:text-4xl text-2xl text-center  font-bold z-20 relative bg-linear-to-r from-[#d6c7ff] to-[#ab8bff] bg-clip-text text-transparent">
-            {movie?.title}
+            {series?.title}
           </p>
           <div className="flex gap-3 items-center">
             <p className="text-white text-base font-semibold">145 min</p>
