@@ -1,4 +1,4 @@
-import { useSeriesDetails } from "../hooks/UseSeriesDetails";
+import { useSeriesDetails } from "../hooks/useSeriesDetails";
 
 function SeriesDetails() {
   const { series } = useSeriesDetails();
