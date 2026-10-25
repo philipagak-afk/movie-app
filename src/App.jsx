@@ -5,7 +5,6 @@ import NowShowing from './pages/NowShowing'
 import Series from './pages/Series'
 import Popular from './pages/Popular'
 import MovieDetails from './pages/MovieDetails'
-import SeriesDetails from "./pages/SeriesDetails";
 
 function App() {
   return (
