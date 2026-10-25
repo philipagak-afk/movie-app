@@ -13,7 +13,7 @@ function SeriesCard({ series }) {
             ? `https://image.tmdb.org/t/p/w500${series.poster_path}`
             : "/placeholder.png"
         }
-        alt={series.name}
+        alt={series.name
         className="aspect-2/3 w-full rounded-xl object-cover transition-transform duration-300 hover:scale-105"
       />
 
