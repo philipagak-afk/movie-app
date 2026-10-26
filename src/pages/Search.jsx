@@ -5,9 +5,14 @@ import { useQuery } from "@tanstack/react-query";
 const IMAGE_BASE = "https://image.tmdb.org/t/p/w500";
 
 function Search() {
-  const [searchInput, setSearchInput] = useState("");
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchParams, setSearchParams] = useSearchParams();
 
+const searchTerm = searchParams.get("query") || "";
+const [searchInput, setSearchInput] = useState(searchTerm);
+
+useEffect(() => {
+  setSearchInput(searchTerm);
+}, [searchTerm]);
   const {
     data: results,
     isLoading,
