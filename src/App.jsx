@@ -6,7 +6,7 @@ import Series from './pages/Series'
 import Popular from './pages/Popular'
 import MovieDetails from './pages/MovieDetails'
 import SeriesDetails from './pages/SeriesDetails'
-import Search from './pages/Search';
+
 
 function App() {
   return (
