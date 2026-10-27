@@ -19,7 +19,6 @@ function App() {
  <Route path="popular" element={<Popular/>}/>
  <Route path ="details/movie/:movie_id"element={<MovieDetails />}/>
  <Route path ="details/tv/:show_id" element={<SeriesDetails/>}/>
- <Route path="/search" element={<Search />} />
  </Route>
 </Routes>
   </BrowserRouter>
